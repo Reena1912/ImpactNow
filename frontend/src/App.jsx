@@ -6,6 +6,7 @@ import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import OurImpact from "./pages/OurImpact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/impact" element={<OurImpact />} />
             <Route path="/events" element={<Events />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/contact" element={<Contact />} />

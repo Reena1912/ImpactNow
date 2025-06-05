@@ -5,17 +5,16 @@ import ImpactStats from "../components/ImpactStats";
 import Testimonials from "../components/Testimonials";
 import CallToAction from "../components/CallToAction";
 
-// ✅ Import the image
 import CommunityImpactImage from "../assets/Sponsor A Child.jpeg";
 
 const Home = () => {
   return (
     <>
-      {/* Hero Section with Local Image */}
+  
       <div className="min-h-screen w-full bg-gradient-to-b from-gray-900 to-gray-800">
         <main className="min-h-screen flex flex-col md:flex-row justify-between items-center px-6 py-20 text-left max-w-screen-xl mx-auto gap-12">
           
-          {/* Left Text Content */}
+          
           <div className="flex-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight max-w-4xl text-white">
               Creating Sustainable Change Through Community Action
@@ -43,7 +42,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Local Image */}
+          
          <div className="flex-1 flex justify-center items-center">
   <img
     src={CommunityImpactImage}
@@ -54,7 +53,7 @@ const Home = () => {
         </main>
       </div>
 
-      {/* Other Sections */}
+      
       <Programs />
       <ImpactStats />
       <Testimonials />

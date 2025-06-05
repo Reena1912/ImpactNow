@@ -57,7 +57,7 @@ const Programs = () => {
               <p className="text-[18px] text-gray-600 mb-6 leading-relaxed font-sans">{program.description}</p>
               <Link 
                 to={program.link} 
-                className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors text-[18px] font-sans"
+                className="inline-flex items-center text-gray-800 font-medium hover:text-blue-800 transition-colors text-[18px] font-sans"
               >
                 Learn more
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

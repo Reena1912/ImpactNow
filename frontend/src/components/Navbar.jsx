@@ -5,21 +5,21 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 shadow-md">
+    <nav className="bg-white shadow-md static top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Link
           to="/"
-          className="text-2xl font-extrabold text-white hover:text-orange-400 transition-colors tracking-wide"
+          className="text-2xl font-extrabold text-[#0B1D3A] transition-colors tracking-wide"
         >
           ImpactNow
         </Link>
 
-        {/* Desktop Menu */}
+       
         <div className="hidden md:flex space-x-8">
           {[
             { label: "Home", to: "/" },
             { label: "About Us", to: "/about" },
+            { label: "Our Impact", to: "/impact" },
             { label: "Events", to: "/events" },
             { label: "Donate", to: "/donate" },
             { label: "Contact", to: "/contact" },
@@ -27,16 +27,16 @@ const Navbar = () => {
             <Link
               key={to}
               to={to}
-              className="text-white font-medium hover:text-orange-400 border-b-2 border-transparent hover:border-orange-400 transition-all pb-1"
+              className="text-[#0B1D3A] font-medium hover:text-[#ff6a00] border-b-2 border-transparent hover:border-[#ff6a00] transition-all pb-1"
             >
               {label}
             </Link>
           ))}
         </div>
 
-        {/* Mobile Hamburger */}
+        
         <button
-          className="md:hidden text-white hover:text-orange-400 focus:outline-none"
+          className="md:hidden text-[#0B1D3A] hover:text-[#ff6a00] focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -65,13 +65,14 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      
       {menuOpen && (
-        <div className="md:hidden bg-gray-800">
+        <div className="md:hidden bg-white border-t border-gray-200">
           <div className="flex flex-col px-4 py-4 space-y-3">
             {[
               { label: "Home", to: "/" },
               { label: "About Us", to: "/about" },
+              { label: "Our Impact", to: "/impact" },
               { label: "Events", to: "/events" },
               { label: "Donate", to: "/donate" },
               { label: "Contact", to: "/contact" },
@@ -79,7 +80,7 @@ const Navbar = () => {
               <Link
                 key={to}
                 to={to}
-                className="text-white font-medium hover:text-orange-400 transition-colors"
+                className="text-[#0B1D3A] font-medium hover:text-[#353944] transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {label}
