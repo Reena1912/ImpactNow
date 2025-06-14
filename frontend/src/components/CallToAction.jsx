@@ -79,7 +79,7 @@ const CallToAction = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
           <Link
             to="/donate"
-            className="bg-gray-600 text-white px-6 py-3 rounded-md font-medium hover:bg-gray-700 transition-colors"
+            className="bg-gray-600 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600 transition-colors"
           >
             Donate Now
           </Link>
@@ -202,7 +202,7 @@ const CallToAction = () => {
 
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors w-full sm:w-auto"
+              className="bg-gray-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors w-full sm:w-auto"
             >
               Submit Volunteer Form
             </button>

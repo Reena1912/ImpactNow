@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
-
 import Programs from "../components/Programs";
 import ImpactStats from "../components/ImpactStats";
-import Testimonials from "../components/Testimonials";
 import CallToAction from "../components/CallToAction";
-
 import CommunityImpactImage from "../assets/Sponsor A Child.jpeg";
 
 const Home = () => {
@@ -56,7 +53,6 @@ const Home = () => {
       
       <Programs />
       <ImpactStats />
-      <Testimonials />
       <CallToAction />
     </>
   );

@@ -7,6 +7,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import OurImpact from "./pages/OurImpact";
+import ResourcePage from "./pages/Resources";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/impact" element={<OurImpact />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/resources" element={<ResourcePage />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

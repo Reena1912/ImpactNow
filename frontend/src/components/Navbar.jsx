@@ -18,9 +18,11 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           {[
             { label: "Home", to: "/" },
-            { label: "About Us", to: "/about" },
-            { label: "Our Impact", to: "/impact" },
+            
+          
             { label: "Events", to: "/events" },
+            { label: "Resources", to: "/resources" },
+           
             { label: "Donate", to: "/donate" },
             { label: "Contact", to: "/contact" },
           ].map(({ label, to }) => (
@@ -71,9 +73,11 @@ const Navbar = () => {
           <div className="flex flex-col px-4 py-4 space-y-3">
             {[
               { label: "Home", to: "/" },
-              { label: "About Us", to: "/about" },
-              { label: "Our Impact", to: "/impact" },
+              
+              
               { label: "Events", to: "/events" },
+              { label: "Resources", to: "/resources" },
+           
               { label: "Donate", to: "/donate" },
               { label: "Contact", to: "/contact" },
             ].map(({ label, to }) => (
